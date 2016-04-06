@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "1.0">
+   <FileBreakpoints>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "WaterMarkCam/MainViewController.m"
+         timestampString = "398784183.452251"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "266"
+         endingLineNumber = "266"
+         landmarkName = "-savingImageIsFinished:didFinishSavingWithError:contextInfo:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "WaterMarkCam/SVProgressHUD/SVProgressHUD.m"
+         timestampString = "398150789.061205"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "251"
+         endingLineNumber = "251"
+         landmarkName = "-updatePosition"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "WaterMarkCam/SVProgressHUD/SVProgressHUD.m"
+         timestampString = "398150827.577924"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "443"
+         endingLineNumber = "443"
+         landmarkName = "-showProgress:status:maskType:"
+         landmarkType = "5">
+      </FileBreakpoint>
+   </FileBreakpoints>
+   <ExceptionBreakpoints>
+      <ExceptionBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         scope = "0"
+         stopOnStyle = "0">
+      </ExceptionBreakpoint>
+   </ExceptionBreakpoints>
+</Bucket>

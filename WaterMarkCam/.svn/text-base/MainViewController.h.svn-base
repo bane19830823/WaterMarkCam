@@ -1,0 +1,25 @@
+//
+//  ViewController.h
+//  WaterMarkCam
+//
+//  Created by Bane on 2013/06/04.
+//  Copyright (c) 2013年 Bane. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+
+@interface MainViewController : UIViewController
+
+@property (nonatomic, retain) NSURL *pictureSavePath;
+@property (nonatomic, retain) ALAssetsLibrary *library;
+@property (nonatomic, retain) IBOutlet UIButton *btnOpenLibrary;
+@property (nonatomic, retain) IBOutlet UIButton *btnTakePicture;
+@property (nonatomic, retain) IBOutlet UIButton *btnTakeVideo;
+@property (nonatomic, retain) IBOutlet UIButton *btnSetting;
+
+- (IBAction)showImagePicker:(UIButton *)sender;
+- (IBAction)showSetting:(id)sender;
+
+
+@end

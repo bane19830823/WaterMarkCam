@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A34A57EF17C3A3F000996B5F /* QBFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A34A57EE17C3A3F000996B5F /* QBFlatButton.m */; };
+		A34A57F317C3A62000996B5F /* UIColor+MLPFlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = A34A57F217C3A62000996B5F /* UIColor+MLPFlatColors.m */; };
+		A391B638176B42C300AB6ECC /* UIImage+ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A391B637176B42C300AB6ECC /* UIImage+ResizeImage.m */; };
+		A3A5336017771758008194CE /* UIScreen+is4inch.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A5335F17771758008194CE /* UIScreen+is4inch.m */; };
+		A3A53364177718F8008194CE /* LogoSizeSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A53362177718F7008194CE /* LogoSizeSettingViewController.m */; };
+		A3A53365177718F8008194CE /* LogoSizeSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3A53363177718F7008194CE /* LogoSizeSettingViewController.xib */; };
+		A3C8DF0417BB4ED400CD1B23 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3C8DF0117BB4ED400CD1B23 /* SVProgressHUD.bundle */; };
+		A3C8DF0517BB4ED400CD1B23 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C8DF0317BB4ED400CD1B23 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A3F4BD0C176361D600BB04C1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F4BD0A176361D600BB04C1 /* SettingViewController.m */; };
+		A3F4BD0D176361D600BB04C1 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F4BD0B176361D600BB04C1 /* SettingViewController.xib */; };
+		A3F4BD101763674900BB04C1 /* SliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F4BD0F1763674900BB04C1 /* SliderCell.m */; };
+		A3F4BD121763682F00BB04C1 /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F4BD111763682F00BB04C1 /* SliderCell.xib */; };
+		A3FE50C5175E28CA00ED6271 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE50C4175E28CA00ED6271 /* UIKit.framework */; };
+		A3FE50C7175E28CA00ED6271 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE50C6175E28CA00ED6271 /* Foundation.framework */; };
+		A3FE50C9175E28CA00ED6271 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE50C8175E28CA00ED6271 /* CoreGraphics.framework */; };
+		A3FE50CF175E28CA00ED6271 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3FE50CD175E28CA00ED6271 /* InfoPlist.strings */; };
+		A3FE50D1175E28CA00ED6271 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE50D0175E28CA00ED6271 /* main.m */; };
+		A3FE50D5175E28CA00ED6271 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE50D4175E28CA00ED6271 /* AppDelegate.m */; };
+		A3FE50D7175E28CA00ED6271 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FE50D6175E28CA00ED6271 /* Default.png */; };
+		A3FE50D9175E28CA00ED6271 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FE50D8175E28CA00ED6271 /* Default@2x.png */; };
+		A3FE50DB175E28CA00ED6271 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FE50DA175E28CA00ED6271 /* Default-568h@2x.png */; };
+		A3FE50DE175E28CA00ED6271 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE50DD175E28CA00ED6271 /* MainViewController.m */; };
+		A3FE50E1175E28CA00ED6271 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FE50DF175E28CA00ED6271 /* MainViewController.xib */; };
+		A3FE50E8175E2B4100ED6271 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE50E7175E2B4100ED6271 /* MobileCoreServices.framework */; };
+		A3FE50EB175E2BE000ED6271 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE50E9175E2BD300ED6271 /* AssetsLibrary.framework */; };
+		A3FE50EE175E2C0800ED6271 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE50EC175E2BF600ED6271 /* CoreMedia.framework */; };
+		A3FE50F1175E2C1B00ED6271 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE50EF175E2C1000ED6271 /* QuartzCore.framework */; };
+		A3FE50F4175E2C6F00ED6271 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE50F2175E2C6500ED6271 /* AVFoundation.framework */; };
+		A3FE50F7175E2CCF00ED6271 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE50F5175E2CC100ED6271 /* CoreVideo.framework */; };
+		A3FE50F9175E2CE200ED6271 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE50F8175E2CE200ED6271 /* ImageIO.framework */; };
+		A3FE50FC1760C0F700ED6271 /* youtubeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FE50FB1760C0F700ED6271 /* youtubeLogo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A34A57ED17C3A3F000996B5F /* QBFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBFlatButton.h; sourceTree = "<group>"; };
+		A34A57EE17C3A3F000996B5F /* QBFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBFlatButton.m; sourceTree = "<group>"; };
+		A34A57F117C3A62000996B5F /* UIColor+MLPFlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MLPFlatColors.h"; sourceTree = "<group>"; };
+		A34A57F217C3A62000996B5F /* UIColor+MLPFlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MLPFlatColors.m"; sourceTree = "<group>"; };
+		A391B636176B42C300AB6ECC /* UIImage+ResizeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeImage.h"; sourceTree = "<group>"; };
+		A391B637176B42C300AB6ECC /* UIImage+ResizeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeImage.m"; sourceTree = "<group>"; };
+		A3A5335E17771758008194CE /* UIScreen+is4inch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+is4inch.h"; sourceTree = "<group>"; };
+		A3A5335F17771758008194CE /* UIScreen+is4inch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+is4inch.m"; sourceTree = "<group>"; };
+		A3A53361177718F7008194CE /* LogoSizeSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoSizeSettingViewController.h; sourceTree = "<group>"; };
+		A3A53362177718F7008194CE /* LogoSizeSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoSizeSettingViewController.m; sourceTree = "<group>"; };
+		A3A53363177718F7008194CE /* LogoSizeSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogoSizeSettingViewController.xib; sourceTree = "<group>"; };
+		A3C8DF0117BB4ED400CD1B23 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		A3C8DF0217BB4ED400CD1B23 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		A3C8DF0317BB4ED400CD1B23 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		A3F4BD09176361D600BB04C1 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		A3F4BD0A176361D600BB04C1 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		A3F4BD0B176361D600BB04C1 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		A3F4BD0E1763674900BB04C1 /* SliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderCell.h; sourceTree = "<group>"; };
+		A3F4BD0F1763674900BB04C1 /* SliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderCell.m; sourceTree = "<group>"; };
+		A3F4BD111763682F00BB04C1 /* SliderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
+		A3FE50C1175E28CA00ED6271 /* WaterMarkCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMarkCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FE50C4175E28CA00ED6271 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A3FE50C6175E28CA00ED6271 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A3FE50C8175E28CA00ED6271 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A3FE50CC175E28CA00ED6271 /* WaterMarkCam-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaterMarkCam-Info.plist"; sourceTree = "<group>"; };
+		A3FE50CE175E28CA00ED6271 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A3FE50D0175E28CA00ED6271 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3FE50D2175E28CA00ED6271 /* WaterMarkCam-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaterMarkCam-Prefix.pch"; sourceTree = "<group>"; };
+		A3FE50D3175E28CA00ED6271 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3FE50D4175E28CA00ED6271 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3FE50D6175E28CA00ED6271 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A3FE50D8175E28CA00ED6271 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A3FE50DA175E28CA00ED6271 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A3FE50DC175E28CA00ED6271 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A3FE50DD175E28CA00ED6271 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A3FE50E0175E28CA00ED6271 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController.xib; sourceTree = "<group>"; };
+		A3FE50E7175E2B4100ED6271 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A3FE50E9175E2BD300ED6271 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		A3FE50EC175E2BF600ED6271 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A3FE50EF175E2C1000ED6271 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A3FE50F2175E2C6500ED6271 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A3FE50F5175E2CC100ED6271 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A3FE50F8175E2CE200ED6271 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A3FE50FB1760C0F700ED6271 /* youtubeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtubeLogo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3FE50BE175E28CA00ED6271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FE50F9175E2CE200ED6271 /* ImageIO.framework in Frameworks */,
+				A3FE50F7175E2CCF00ED6271 /* CoreVideo.framework in Frameworks */,
+				A3FE50F4175E2C6F00ED6271 /* AVFoundation.framework in Frameworks */,
+				A3FE50F1175E2C1B00ED6271 /* QuartzCore.framework in Frameworks */,
+				A3FE50EE175E2C0800ED6271 /* CoreMedia.framework in Frameworks */,
+				A3FE50EB175E2BE000ED6271 /* AssetsLibrary.framework in Frameworks */,
+				A3FE50E8175E2B4100ED6271 /* MobileCoreServices.framework in Frameworks */,
+				A3FE50C5175E28CA00ED6271 /* UIKit.framework in Frameworks */,
+				A3FE50C7175E28CA00ED6271 /* Foundation.framework in Frameworks */,
+				A3FE50C9175E28CA00ED6271 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A34A57EC17C3A3F000996B5F /* QBFlatButton */ = {
+			isa = PBXGroup;
+			children = (
+				A34A57ED17C3A3F000996B5F /* QBFlatButton.h */,
+				A34A57EE17C3A3F000996B5F /* QBFlatButton.m */,
+			);
+			path = QBFlatButton;
+			sourceTree = "<group>";
+		};
+		A34A57F017C3A62000996B5F /* UIColor+MLPFlatColors */ = {
+			isa = PBXGroup;
+			children = (
+				A34A57F117C3A62000996B5F /* UIColor+MLPFlatColors.h */,
+				A34A57F217C3A62000996B5F /* UIColor+MLPFlatColors.m */,
+			);
+			path = "UIColor+MLPFlatColors";
+			sourceTree = "<group>";
+		};
+		A3C8DF0017BB4ED400CD1B23 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A3C8DF0117BB4ED400CD1B23 /* SVProgressHUD.bundle */,
+				A3C8DF0217BB4ED400CD1B23 /* SVProgressHUD.h */,
+				A3C8DF0317BB4ED400CD1B23 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		A3FE50B8175E28CA00ED6271 = {
+			isa = PBXGroup;
+			children = (
+				A3FE50F8175E2CE200ED6271 /* ImageIO.framework */,
+				A3FE50CA175E28CA00ED6271 /* WaterMarkCam */,
+				A3FE50C3175E28CA00ED6271 /* Frameworks */,
+				A3FE50C2175E28CA00ED6271 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3FE50C2175E28CA00ED6271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE50C1175E28CA00ED6271 /* WaterMarkCam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3FE50C3175E28CA00ED6271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE50F5175E2CC100ED6271 /* CoreVideo.framework */,
+				A3FE50F2175E2C6500ED6271 /* AVFoundation.framework */,
+				A3FE50E9175E2BD300ED6271 /* AssetsLibrary.framework */,
+				A3FE50EF175E2C1000ED6271 /* QuartzCore.framework */,
+				A3FE50EC175E2BF600ED6271 /* CoreMedia.framework */,
+				A3FE50E7175E2B4100ED6271 /* MobileCoreServices.framework */,
+				A3FE50C4175E28CA00ED6271 /* UIKit.framework */,
+				A3FE50C6175E28CA00ED6271 /* Foundation.framework */,
+				A3FE50C8175E28CA00ED6271 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3FE50CA175E28CA00ED6271 /* WaterMarkCam */ = {
+			isa = PBXGroup;
+			children = (
+				A34A57F017C3A62000996B5F /* UIColor+MLPFlatColors */,
+				A34A57EC17C3A3F000996B5F /* QBFlatButton */,
+				A3C8DF0017BB4ED400CD1B23 /* SVProgressHUD */,
+				A3FE50FA1760C0E700ED6271 /* images */,
+				A3FE50D3175E28CA00ED6271 /* AppDelegate.h */,
+				A3FE50D4175E28CA00ED6271 /* AppDelegate.m */,
+				A3FE50DC175E28CA00ED6271 /* MainViewController.h */,
+				A3FE50DD175E28CA00ED6271 /* MainViewController.m */,
+				A3FE50DF175E28CA00ED6271 /* MainViewController.xib */,
+				A3F4BD09176361D600BB04C1 /* SettingViewController.h */,
+				A3F4BD0A176361D600BB04C1 /* SettingViewController.m */,
+				A3F4BD0B176361D600BB04C1 /* SettingViewController.xib */,
+				A3A53361177718F7008194CE /* LogoSizeSettingViewController.h */,
+				A3A53362177718F7008194CE /* LogoSizeSettingViewController.m */,
+				A3A53363177718F7008194CE /* LogoSizeSettingViewController.xib */,
+				A3F4BD0E1763674900BB04C1 /* SliderCell.h */,
+				A3F4BD0F1763674900BB04C1 /* SliderCell.m */,
+				A3F4BD111763682F00BB04C1 /* SliderCell.xib */,
+				A391B636176B42C300AB6ECC /* UIImage+ResizeImage.h */,
+				A391B637176B42C300AB6ECC /* UIImage+ResizeImage.m */,
+				A3A5335E17771758008194CE /* UIScreen+is4inch.h */,
+				A3A5335F17771758008194CE /* UIScreen+is4inch.m */,
+				A3FE50CB175E28CA00ED6271 /* Supporting Files */,
+			);
+			path = WaterMarkCam;
+			sourceTree = "<group>";
+		};
+		A3FE50CB175E28CA00ED6271 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE50CC175E28CA00ED6271 /* WaterMarkCam-Info.plist */,
+				A3FE50CD175E28CA00ED6271 /* InfoPlist.strings */,
+				A3FE50D0175E28CA00ED6271 /* main.m */,
+				A3FE50D2175E28CA00ED6271 /* WaterMarkCam-Prefix.pch */,
+				A3FE50D6175E28CA00ED6271 /* Default.png */,
+				A3FE50D8175E28CA00ED6271 /* Default@2x.png */,
+				A3FE50DA175E28CA00ED6271 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3FE50FA1760C0E700ED6271 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE50FB1760C0F700ED6271 /* youtubeLogo.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3FE50C0175E28CA00ED6271 /* WaterMarkCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FE50E4175E28CA00ED6271 /* Build configuration list for PBXNativeTarget "WaterMarkCam" */;
+			buildPhases = (
+				A3FE50BD175E28CA00ED6271 /* Sources */,
+				A3FE50BE175E28CA00ED6271 /* Frameworks */,
+				A3FE50BF175E28CA00ED6271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterMarkCam;
+			productName = WaterMarkCam;
+			productReference = A3FE50C1175E28CA00ED6271 /* WaterMarkCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3FE50B9175E28CA00ED6271 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Bane;
+			};
+			buildConfigurationList = A3FE50BC175E28CA00ED6271 /* Build configuration list for PBXProject "WaterMarkCam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A3FE50B8175E28CA00ED6271;
+			productRefGroup = A3FE50C2175E28CA00ED6271 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3FE50C0175E28CA00ED6271 /* WaterMarkCam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3FE50BF175E28CA00ED6271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FE50CF175E28CA00ED6271 /* InfoPlist.strings in Resources */,
+				A3FE50D7175E28CA00ED6271 /* Default.png in Resources */,
+				A3FE50D9175E28CA00ED6271 /* Default@2x.png in Resources */,
+				A3FE50DB175E28CA00ED6271 /* Default-568h@2x.png in Resources */,
+				A3FE50E1175E28CA00ED6271 /* MainViewController.xib in Resources */,
+				A3FE50FC1760C0F700ED6271 /* youtubeLogo.png in Resources */,
+				A3F4BD0D176361D600BB04C1 /* SettingViewController.xib in Resources */,
+				A3F4BD121763682F00BB04C1 /* SliderCell.xib in Resources */,
+				A3A53365177718F8008194CE /* LogoSizeSettingViewController.xib in Resources */,
+				A3C8DF0417BB4ED400CD1B23 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3FE50BD175E28CA00ED6271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FE50D1175E28CA00ED6271 /* main.m in Sources */,
+				A3FE50D5175E28CA00ED6271 /* AppDelegate.m in Sources */,
+				A3FE50DE175E28CA00ED6271 /* MainViewController.m in Sources */,
+				A3F4BD0C176361D600BB04C1 /* SettingViewController.m in Sources */,
+				A3F4BD101763674900BB04C1 /* SliderCell.m in Sources */,
+				A391B638176B42C300AB6ECC /* UIImage+ResizeImage.m in Sources */,
+				A3A5336017771758008194CE /* UIScreen+is4inch.m in Sources */,
+				A3A53364177718F8008194CE /* LogoSizeSettingViewController.m in Sources */,
+				A3C8DF0517BB4ED400CD1B23 /* SVProgressHUD.m in Sources */,
+				A34A57EF17C3A3F000996B5F /* QBFlatButton.m in Sources */,
+				A34A57F317C3A62000996B5F /* UIColor+MLPFlatColors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3FE50CD175E28CA00ED6271 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3FE50CE175E28CA00ED6271 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A3FE50DF175E28CA00ED6271 /* MainViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3FE50E0175E28CA00ED6271 /* en */,
+			);
+			name = MainViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3FE50E2175E28CA00ED6271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A3FE50E3175E28CA00ED6271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3FE50E5175E28CA00ED6271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaterMarkCam/WaterMarkCam-Prefix.pch";
+				INFOPLIST_FILE = "WaterMarkCam/WaterMarkCam-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A3FE50E6175E28CA00ED6271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaterMarkCam/WaterMarkCam-Prefix.pch";
+				INFOPLIST_FILE = "WaterMarkCam/WaterMarkCam-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3FE50BC175E28CA00ED6271 /* Build configuration list for PBXProject "WaterMarkCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FE50E2175E28CA00ED6271 /* Debug */,
+				A3FE50E3175E28CA00ED6271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FE50E4175E28CA00ED6271 /* Build configuration list for PBXNativeTarget "WaterMarkCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FE50E5175E28CA00ED6271 /* Debug */,
+				A3FE50E6175E28CA00ED6271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3FE50B9175E28CA00ED6271 /* Project object */;
+}
