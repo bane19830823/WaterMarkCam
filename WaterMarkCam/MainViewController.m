@@ -265,14 +265,9 @@
     path = [path stringByAppendingPathComponent:@"logo.png"];
     UIImage *image = [UIImage imageWithContentsOfFile:path];
 
-    if(image == nil) {
-        [SVProgressHUD showErrorWithStatus:@"設定画面でロゴを設定してください"];
-        return;
-    } else {
-        [SVProgressHUD showWithStatus:@"写真を保存中"];
-        UIImage *newImage = [self getWImage:sourceImage frontImage:image];
-        UIImageWriteToSavedPhotosAlbum(newImage, self, @selector(savingImageIsFinished:didFinishSavingWithError:contextInfo:), nil);
-    }
+    [SVProgressHUD showWithStatus:@"Saving Photo"];
+    UIImage *newImage = [self getWImage:sourceImage frontImage:image];
+    UIImageWriteToSavedPhotosAlbum(newImage, self, @selector(savingImageIsFinished:didFinishSavingWithError:contextInfo:), nil);
 }
 
 // 写真の保存が完了したら呼ばれるメソッド
@@ -281,17 +276,17 @@
     
     [SVProgressHUD dismiss];
     if (error) {
-        [SVProgressHUD showErrorWithStatus:@"写真の保存に失敗しました"];
+        [SVProgressHUD showErrorWithStatus:@"Failed To Save The Photo"];
     } else {
         // Alertを表示する
-        [SVProgressHUD showSuccessWithStatus:@"写真を保存しました"];
+        [SVProgressHUD showSuccessWithStatus:@"Save The Photo To Camera Roll"];
     }
     [self isOperating:NO];
 }
 
 //ビデオにwatermarkをつける
 - (void)addWaterMarkOnVideo:(NSURL *)sourceUrl {
-    [SVProgressHUD showWithStatus:@"ビデオを保存中"];
+    [SVProgressHUD showWithStatus:@"Saving Video"];
     //***** 1. ベースとなる動画のコンポジションを作成。*****//
     
     // 動画URLからアセットを生成
@@ -411,11 +406,10 @@
                             [self.library writeVideoAtPathToSavedPhotosAlbum:outputURL completionBlock:^(NSURL *assetURL, NSError *error){
                                 dispatch_async(dispatch_get_main_queue(), ^{
                                     if (error) {
-                                        [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"ビデオの保存に失敗しました。", @"Video export failed alert message")];
+                                        [SVProgressHUD showErrorWithStatus:@"Failed to Save The Video"];
                                         [self isOperating:NO];
                                     } else {
-                                        [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"ビデオをライブラリに保存しました。"
-                                                                                               , @"Video export success alert message")];
+                                        [SVProgressHUD showSuccessWithStatus:@"Save The Video To Camera Roll"];
                                         [self isOperating:NO];
                                     }
                                 });
@@ -425,14 +419,14 @@
                     }
                     case AVAssetExportSessionStatusFailed:
                     {
-                        [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"ビデオの保存に失敗しました。", @"Video export fail alert message")];
+                        [SVProgressHUD showErrorWithStatus:@"Failed To Save The Video"];
                         [self isOperating:NO];
                         NSLog(@"Failed:%@", exporter.error);
                         break;
                     }
                     case AVAssetExportSessionStatusCancelled:
                     {
-                        [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"ビデオの保存をキャンセルしました。", @"Video export cancel alert message")];
+                        [SVProgressHUD showErrorWithStatus:@"Canceled To Save the Video"];
                         [self isOperating:NO];
                         NSLog(@"Canceled:%@",exporter.error);
                         break;

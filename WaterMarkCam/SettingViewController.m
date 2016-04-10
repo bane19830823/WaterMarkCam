@@ -228,7 +228,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) {
-        return NSLocalizedString(@"ロゴの透明度", @"Transparency of watermark");
+        return @"Transparency Of Logo";
     }
     return @"";
 }
