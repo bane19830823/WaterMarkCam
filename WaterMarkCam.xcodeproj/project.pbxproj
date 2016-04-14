@@ -12,9 +12,6 @@
 		A30D030D1CB0FCE600CFE109 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30D030C1CB0FCE600CFE109 /* AdSupport.framework */; };
 		A30D030F1CB0FCF800CFE109 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30D030E1CB0FCF800CFE109 /* Security.framework */; };
 		A30D03251CB1312E00CFE109 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30D03241CB1312E00CFE109 /* Images.xcassets */; };
-		A30D03281CB13AC100CFE109 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A30D03261CB13AC100CFE109 /* Default-568h@2x.png */; };
-		A30D03291CB13AC100CFE109 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A30D03271CB13AC100CFE109 /* Default@2x.png */; };
-		A30F34931CBFF4BA00523C9F /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30F34921CBFF4BA00523C9F /* Photos.framework */; };
 		A34A57EF17C3A3F000996B5F /* QBFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A34A57EE17C3A3F000996B5F /* QBFlatButton.m */; };
 		A34A57F317C3A62000996B5F /* UIColor+MLPFlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = A34A57F217C3A62000996B5F /* UIColor+MLPFlatColors.m */; };
 		A391B638176B42C300AB6ECC /* UIImage+ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A391B637176B42C300AB6ECC /* UIImage+ResizeImage.m */; };
@@ -33,7 +30,6 @@
 		A3FE50CF175E28CA00ED6271 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3FE50CD175E28CA00ED6271 /* InfoPlist.strings */; };
 		A3FE50D1175E28CA00ED6271 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE50D0175E28CA00ED6271 /* main.m */; };
 		A3FE50D5175E28CA00ED6271 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE50D4175E28CA00ED6271 /* AppDelegate.m */; };
-		A3FE50D7175E28CA00ED6271 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FE50D6175E28CA00ED6271 /* Default.png */; };
 		A3FE50DE175E28CA00ED6271 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE50DD175E28CA00ED6271 /* MainViewController.m */; };
 		A3FE50E1175E28CA00ED6271 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FE50DF175E28CA00ED6271 /* MainViewController.xib */; };
 		A3FE50E8175E2B4100ED6271 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE50E7175E2B4100ED6271 /* MobileCoreServices.framework */; };
@@ -62,9 +58,6 @@
 		A30D030C1CB0FCE600CFE109 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		A30D030E1CB0FCF800CFE109 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A30D03241CB1312E00CFE109 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A30D03261CB13AC100CFE109 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A30D03271CB13AC100CFE109 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		A30F34921CBFF4BA00523C9F /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		A34A57ED17C3A3F000996B5F /* QBFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBFlatButton.h; sourceTree = "<group>"; };
 		A34A57EE17C3A3F000996B5F /* QBFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBFlatButton.m; sourceTree = "<group>"; };
 		A34A57F117C3A62000996B5F /* UIColor+MLPFlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MLPFlatColors.h"; sourceTree = "<group>"; };
@@ -95,7 +88,6 @@
 		A3FE50D2175E28CA00ED6271 /* WaterMarkCam-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaterMarkCam-Prefix.pch"; sourceTree = "<group>"; };
 		A3FE50D3175E28CA00ED6271 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A3FE50D4175E28CA00ED6271 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A3FE50D6175E28CA00ED6271 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A3FE50DC175E28CA00ED6271 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		A3FE50DD175E28CA00ED6271 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		A3FE50E0175E28CA00ED6271 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController.xib; sourceTree = "<group>"; };
@@ -113,7 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30F34931CBFF4BA00523C9F /* Photos.framework in Frameworks */,
 				A30D030F1CB0FCF800CFE109 /* Security.framework in Frameworks */,
 				A30D030D1CB0FCE600CFE109 /* AdSupport.framework in Frameworks */,
 				A3FE50F9175E2CE200ED6271 /* ImageIO.framework in Frameworks */,
@@ -202,7 +193,6 @@
 		A3FE50C3175E28CA00ED6271 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A30F34921CBFF4BA00523C9F /* Photos.framework */,
 				A30D030E1CB0FCF800CFE109 /* Security.framework */,
 				A30D030C1CB0FCE600CFE109 /* AdSupport.framework */,
 				A3FE50F5175E2CC100ED6271 /* CoreVideo.framework */,
@@ -255,9 +245,6 @@
 				A3FE50CD175E28CA00ED6271 /* InfoPlist.strings */,
 				A3FE50D0175E28CA00ED6271 /* main.m */,
 				A3FE50D2175E28CA00ED6271 /* WaterMarkCam-Prefix.pch */,
-				A3FE50D6175E28CA00ED6271 /* Default.png */,
-				A30D03261CB13AC100CFE109 /* Default-568h@2x.png */,
-				A30D03271CB13AC100CFE109 /* Default@2x.png */,
 				A30D03241CB1312E00CFE109 /* Images.xcassets */,
 			);
 			name = "Supporting Files";
@@ -320,11 +307,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FE50CF175E28CA00ED6271 /* InfoPlist.strings in Resources */,
-				A3FE50D7175E28CA00ED6271 /* Default.png in Resources */,
 				A30D03251CB1312E00CFE109 /* Images.xcassets in Resources */,
-				A30D03281CB13AC100CFE109 /* Default-568h@2x.png in Resources */,
 				A3FE50E1175E28CA00ED6271 /* MainViewController.xib in Resources */,
-				A30D03291CB13AC100CFE109 /* Default@2x.png in Resources */,
 				A30D030B1CB0FCA500CFE109 /* NADView_readme.txt in Resources */,
 				A3F4BD0D176361D600BB04C1 /* SettingViewController.xib in Resources */,
 				A3F4BD121763682F00BB04C1 /* SliderCell.xib in Resources */,
