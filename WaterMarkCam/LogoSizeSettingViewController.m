@@ -49,8 +49,8 @@
     [super viewDidLoad];
     
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    NSData* imageData = [ud objectForKey:WMWaterMarkSaveKey];
-    if(imageData) {
+    if([ud objectForKey:WMWaterMarkSaveKey]) {
+        NSData *imageData = [ud objectForKey:WMWaterMarkSaveKey];
         UIImage* image = [UIImage imageWithData:imageData];
         self.logoImageView = [[UIImageView alloc] initWithImage:image];
         
@@ -83,10 +83,10 @@
             [self.logoSetView addGestureRecognizer:pan];
         }
     } else {
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"表示するロゴを先に選択して下さい。" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"Choose Logo To Display First" preferredStyle:UIAlertControllerStyleAlert];
         
         // addActionした順に左から右にボタンが配置されます
-        [alertController addAction:[UIAlertAction actionWithTitle:@"はい" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
             
         }]];
     }
