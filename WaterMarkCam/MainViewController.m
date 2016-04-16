@@ -52,7 +52,7 @@
     // (3) ログ出力の指定
     [self.nadView setIsOutputLog:NO];
     // (4) set apiKey, spotId.
-    [self.nadView setNendID:@"1078da639b3ba2589bc2a8376c2e2c244496b1cf" spotID:@"572855"];
+    [self.nadView setNendID:@"ea574df6c315fd5375e22d7f6bae5cfacfcde4e0" spotID:@"579675"];
     [self.nadView setDelegate:self]; //(5)
     [self.nadView load]; //(6)
     [self.view addSubview:self.nadView]; // 最初から表示する場合
