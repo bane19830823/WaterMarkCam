@@ -38,7 +38,7 @@
     self.btnTakeVideo = nil;
     self.btnSetting = nil;
     self.buttonView = nil;
-    [self.nadView setDelegate:nil];
+    [self.nadViewHeader setDelegate:nil];
     
     [super dealloc];
 }
@@ -47,15 +47,27 @@
 {
     [super viewDidLoad];
     
+    // (1)ヘッダー広告
     // (2) NADView の作成
-    self.nadView = [[NADView alloc] initWithFrame:CGRectMake(0, 20, 320, 50)];
+    self.nadViewHeader = [[NADView alloc] initWithFrame:CGRectMake(0, 20, 320, 50)];
     // (3) ログ出力の指定
-    [self.nadView setIsOutputLog:NO];
+    [self.nadViewHeader setIsOutputLog:NO];
     // (4) set apiKey, spotId.
-    [self.nadView setNendID:@"ea574df6c315fd5375e22d7f6bae5cfacfcde4e0" spotID:@"579675"];
-    [self.nadView setDelegate:self]; //(5)
-    [self.nadView load]; //(6)
-    [self.view addSubview:self.nadView]; // 最初から表示する場合
+    [self.nadViewHeader setNendID:@"ea574df6c315fd5375e22d7f6bae5cfacfcde4e0" spotID:@"579675"];
+    [self.nadViewHeader setDelegate:self]; //(5)
+    [self.nadViewHeader load]; //(6)
+    [self.view addSubview:self.nadViewHeader]; // 最初から表示する場合
+    
+    // (1)フッター広告
+    // (2) NADView の作成
+    self.nadViewFooter = [[NADView alloc] initWithFrame:CGRectMake(0, [UIScreen getScreenHeight] - 50, 320, 50)];
+    // (3) ログ出力の指定
+    [self.nadViewFooter setIsOutputLog:NO];
+    // (4) set apiKey, spotId.
+    [self.nadViewFooter setNendID:@"8c23ab86b32859af5e0541183b4d59058c821c67" spotID:@"580361"];
+    [self.nadViewFooter setDelegate:self]; //(5)
+    [self.nadViewFooter load]; //(6)
+    [self.view addSubview:self.nadViewFooter]; // 最初から表示する場合
     
 	// Do any additional setup after loading the view, typically from a nib.
     self.library = [[ALAssetsLibrary alloc] init];

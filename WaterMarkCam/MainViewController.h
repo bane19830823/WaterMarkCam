@@ -19,7 +19,8 @@
 @property (nonatomic, retain) IBOutlet QBFlatButton *btnTakeVideo;
 @property (nonatomic, retain) IBOutlet QBFlatButton *btnSetting;
 @property (nonatomic, retain) IBOutlet UIView *buttonView;
-@property (nonatomic, retain) NADView * nadView;
+@property (nonatomic, retain) NADView *nadViewHeader;
+@property (nonatomic, retain) NADView *nadViewFooter;
 
 - (IBAction)showSetting:(id)sender;
 
