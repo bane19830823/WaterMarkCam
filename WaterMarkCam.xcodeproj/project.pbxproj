@@ -419,7 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Takeaki Akabane (AABN4B4723)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Takeaki Akabane (8RT2M2S747)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Takeaki Akabane (AABN4B4723)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WaterMarkCam/WaterMarkCam-Prefix.pch";
@@ -432,7 +432,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "81de1987-1305-43f4-ad6f-f05f002b9444";
+				PROVISIONING_PROFILE = "3dd4b265-1d3a-403f-86ba-a31860d255bf";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -442,7 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Takeaki Akabane (AABN4B4723)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Takeaki Akabane (8RT2M2S747)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Takeaki Akabane (AABN4B4723)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WaterMarkCam/WaterMarkCam-Prefix.pch";
@@ -455,7 +455,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "81de1987-1305-43f4-ad6f-f05f002b9444";
+				PROVISIONING_PROFILE = "3dd4b265-1d3a-403f-86ba-a31860d255bf";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

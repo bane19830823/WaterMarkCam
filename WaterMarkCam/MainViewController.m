@@ -78,7 +78,7 @@
     self.btnTakePicture.radius = 8.0;
     self.btnTakePicture.margin = 4.0;
     self.btnTakePicture.depth = 3.0;
-    
+    self.btnTakePicture.exclusiveTouch = YES;
     self.btnTakePicture.titleLabel.font = [UIFont boldSystemFontOfSize:16];
     [self.btnTakePicture setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.buttonView addSubview:self.btnTakePicture];
@@ -89,7 +89,7 @@
     self.btnTakeVideo.radius = 8.0;
     self.btnTakeVideo.margin = 4.0;
     self.btnTakeVideo.depth = 3.0;
-    
+    self.btnTakeVideo.exclusiveTouch = YES;
     self.btnTakeVideo.titleLabel.font = [UIFont boldSystemFontOfSize:16];
     [self.btnTakeVideo setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.buttonView addSubview:self.btnTakeVideo];
@@ -101,7 +101,7 @@
     self.btnOpenLibrary.radius = 8.0;
     self.btnOpenLibrary.margin = 4.0;
     self.btnOpenLibrary.depth = 3.0;
-    
+    self.btnOpenLibrary.exclusiveTouch = YES;
     self.btnOpenLibrary.titleLabel.font = [UIFont boldSystemFontOfSize:16];
     [self.btnOpenLibrary setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.buttonView addSubview:self.btnOpenLibrary];
@@ -112,7 +112,7 @@
     self.btnSetting.radius = 8.0;
     self.btnSetting.margin = 4.0;
     self.btnSetting.depth = 3.0;
-    
+    self.btnSetting.exclusiveTouch = YES;
     self.btnSetting.titleLabel.font = [UIFont boldSystemFontOfSize:16];
     [self.btnSetting setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.buttonView addSubview:self.btnSetting];
@@ -130,13 +130,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-//写真ライブラリを開く
-- (IBAction)showImagePicker:(UIButton *)sender {
-    if ([self startMediaBrowserFromViewController:self usingDelegate:self sender:sender]) {
-    } else {
-        //写真ライブラリーが利用出来ない
-    }
+- (IBAction)showTakePicture:(id)sender {
+    [self startMediaBrowserFromViewController:(UIViewController*)self
+                                usingDelegate:(id)self sender:(UIButton *)sender];
 }
+
+- (IBAction)showTakeVideo:(id)sender {
+    [self startMediaBrowserFromViewController:(UIViewController*)self
+                                usingDelegate:(id)self sender:(UIButton *)sender];
+}
+
+//写真ライブラリを開く
+- (IBAction)showLibrary:(UIButton *)sender {
+[self startMediaBrowserFromViewController:(UIViewController*)self
+                            usingDelegate:(id)self sender:(UIButton *)sender];
+}
+
 
 //設定画面を開く
 - (IBAction)showSetting:(id)sender {
@@ -174,6 +183,7 @@
     UIImagePickerController *mediaUI = [[[UIImagePickerController alloc] init] autorelease];
     
     if (sender == self.btnTakePicture) {
+        picMode = PickingModePhoto;
         mediaUI.sourceType = UIImagePickerControllerSourceTypeCamera;
     } else if (sender == self.btnTakeVideo) {
         mediaUI.sourceType = UIImagePickerControllerSourceTypeCamera;
@@ -182,11 +192,11 @@
         mediaUI.videoQuality = UIImagePickerControllerQualityTypeHigh;
         
     } else if (sender == self.btnOpenLibrary) {
+        picMode = PrickingModeLibrary;
         mediaUI.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
         mediaUI.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeMovie, (NSString *)kUTTypeImage, nil];
     }
     
-    [self isOperating:YES];
     // Hides the controls for moving & scaling pictures, or for
     // trimming movies. To instead show the controls, use YES.
     mediaUI.allowsEditing = YES;
@@ -223,7 +233,16 @@
         // photo
     } else if (CFStringCompare ((CFStringRef)mediaType, kUTTypeImage, 0) == kCFCompareEqualTo) {
         UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-        [self addWaterMarkOnPhoto:image];
+        if (picMode == PickingModePhoto) {
+            [self addWaterMarkOnPhoto:image];
+        } else if (picMode == PrickingModeLibrary) {
+            NSArray* actItems = [NSArray arrayWithObjects:image, nil];
+            
+            UIActivityViewController *activityView = [[[UIActivityViewController alloc] initWithActivityItems:actItems applicationActivities:nil] autorelease];
+            
+            [self presentViewController:activityView animated:YES completion:^{
+            }];
+        }
     }
 }
 
@@ -239,7 +258,6 @@
         [self dismissModalViewControllerAnimated:YES];
 #endif
     }
-    [self isOperating:NO];
 }
 
 //2枚のUIImageを合成する
@@ -293,7 +311,6 @@
         // Alertを表示する
         [SVProgressHUD showSuccessWithStatus:@"Save The Photo To Camera Roll"];
     }
-    [self isOperating:NO];
 }
 
 //ビデオにwatermarkをつける
@@ -326,7 +343,6 @@
     path = [path stringByAppendingPathComponent:@"logo.png"];
     UIImage *image = [UIImage imageWithContentsOfFile:path];
     if(image == nil) {
-        [self isOperating:NO];
         return;
     } else {
         CALayer *logoLayer = [CALayer layer];
@@ -419,10 +435,8 @@
                                 dispatch_async(dispatch_get_main_queue(), ^{
                                     if (error) {
                                         [SVProgressHUD showErrorWithStatus:@"Failed to Save The Video"];
-                                        [self isOperating:NO];
                                     } else {
                                         [SVProgressHUD showSuccessWithStatus:@"Save The Video To Camera Roll"];
-                                        [self isOperating:NO];
                                     }
                                 });
                             }];
@@ -432,14 +446,12 @@
                     case AVAssetExportSessionStatusFailed:
                     {
                         [SVProgressHUD showErrorWithStatus:@"Failed To Save The Video"];
-                        [self isOperating:NO];
                         NSLog(@"Failed:%@", exporter.error);
                         break;
                     }
                     case AVAssetExportSessionStatusCancelled:
                     {
                         [SVProgressHUD showErrorWithStatus:@"Canceled To Save the Video"];
-                        [self isOperating:NO];
                         NSLog(@"Canceled:%@",exporter.error);
                         break;
                     }
@@ -481,14 +493,6 @@
         }
     }
     return isPortrait;
-}
-
-- (void)isOperating:(BOOL)operating {
-    if (operating) {
-        self.btnTakePicture.enabled = self.btnTakeVideo.enabled = self.btnOpenLibrary.enabled = self.btnSetting.enabled = NO;
-    } else {
-        self.btnTakePicture.enabled = self.btnTakeVideo.enabled = self.btnOpenLibrary.enabled = self.btnSetting.enabled = YES;
-    }
 }
 
 #pragma mark  AutoRotation Support Methods
