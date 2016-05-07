@@ -13,6 +13,7 @@
 
 typedef enum {
     PickingModePhoto,
+    PickingModeVideo,
     PrickingModeLibrary
 } PickingMode;
 

@@ -228,8 +228,20 @@
     
     // video
     if (CFStringCompare ((CFStringRef)mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo) {
-        NSURL *url = [info objectForKey:UIImagePickerControllerMediaURL];
-        [self addWaterMarkOnVideo:url];
+        if (picMode == PickingModeVideo) {
+            NSURL *url = [info objectForKey:UIImagePickerControllerMediaURL];
+            [self addWaterMarkOnVideo:url];
+        } else if (picMode == PrickingModeLibrary) {
+            NSURL *url = [info objectForKey:UIImagePickerControllerMediaURL];
+            NSArray *actItems = [NSArray arrayWithObjects:url, nil];
+            
+                UIActivityViewController *activityView = [[[UIActivityViewController alloc] initWithActivityItems:actItems applicationActivities:nil] autorelease];
+                
+                [self presentViewController:activityView animated:YES completion:^{
+                }];
+
+        }
+        
         // photo
     } else if (CFStringCompare ((CFStringRef)mediaType, kUTTypeImage, 0) == kCFCompareEqualTo) {
         UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
